@@ -1,34 +1,55 @@
-# Time-Series-Components-Modeling
-This repository contains different functions and how they model different components of a time series, such as trend and seasonality. If a time seris has some prediocity such as daily, weekly or monthly seasonaility, we want to be able to find and fit relevant models that explain this seasonal pattern in the training data as well as can generalize to the test data.
+# Time-Series Components Modeling
+
+This repository contains functions for modeling various components of a time series, such as **trend** and **seasonality**. When a time series exhibits periodicity—whether daily, weekly, or monthly—we aim to find and fit models that can explain these patterns in the training data and generalize to the test data.
 
 ## Time Series
-A time series is a sequence of data points collected or recorded at successive intervals over a period of time. This type of data is characterized by its chronological order, allowing for the analysis of trends, patterns, and changes over time.
+
+A **time series** is a sequence of data points collected or recorded at successive intervals over time. This type of data is ordered chronologically, allowing for the analysis of trends, seasonal patterns, and changes over time.
 
 ## Motivation
-In theory, a time series can be broken down into several components to better understand how the data varies over time. These components include trend, seasonality, cyclicality, and noise (randomness). Below are descriptions of each component. A time series may exhibit all or only some of these components. By modeling each of these components separately, we can improve the explainability of what is happening with the data. In this project, the main focus will be on modeling trend and seasonality, as most of the variation in a time series is often explained by these two components, though this may not always be the case.
 
-#### Trend
-The long-term movement or direction in the data over time. It shows the overall increase or decrease in the values, regardless of any short-term fluctuations.
+In theory, a time series can be decomposed into several components to better understand how the data behaves over time. These components include:
 
-Example: A steady rise in temperature over several decades due to climate change.
+- **Trend**
+- **Seasonality**
+- **Cyclicality**
+- **Noise (Randomness)**
 
-#### Seasonailty
-Repeating patterns or cycles that occur at regular intervals within a fixed period (e.g., yearly, monthly, weekly). This is often driven by predictable factors like weather, holidays, or specific business cycles.
+By modeling these components separately, we can enhance the interpretability of the time series data. In this project, the main focus will be on modeling **trend** and **seasonality**, as these two components often explain the majority of the variation in a time series. However, this may not always be the case for all datasets.
 
-Example: Retail sales increasing every December due to holiday shopping.
+---
 
-#### Cyclicality
-Fluctuations that occur over longer, irregular periods and are often related to economic or business cycles. These patterns don’t have a fixed frequency like seasonality and can be unpredictable.
+## Time Series Components
 
-Example: Economic recessions occurring every few years, but not at regular intervals.
+### 1. Trend
 
-#### Noise
-The random or unpredictable variations in the data that cannot be explained by the other components (trend, seasonality, or cyclicality). Noise represents the "unstructured" part of the time series.
+The **trend** represents the long-term movement or direction in the data over time. It shows whether values are increasing, decreasing, or remaining stable, irrespective of short-term fluctuations.
 
-Example: Sudden short-term stock market changes due to unexpected news or events.
+- **Example**: A steady rise in global temperatures over several decades due to climate change.
+
+### 2. Seasonality
+
+**Seasonality** refers to repeating patterns or cycles that occur at fixed, regular intervals, such as yearly, monthly, or weekly. These patterns are often driven by predictable factors, such as weather changes or holidays.
+
+- **Example**: Retail sales typically peak every December due to holiday shopping.
+
+### 3. Cyclicality
+
+**Cyclicality** represents fluctuations that occur over longer, irregular periods, often related to external factors like economic cycles. Unlike seasonality, cyclicality does not have a fixed frequency.
+
+- **Example**: Economic recessions that happen every few years, but at unpredictable intervals.
+
+### 4. Noise (Randomness)
+
+**Noise** represents random or unpredictable variations in the data that cannot be explained by trend, seasonality, or cyclicality. Noise is considered the "unstructured" part of the time series.
+
+- **Example**: Sudden stock market fluctuations due to unexpected news.
+
+---
 
 ## Visual Illustration of Components
 
 <img width="500" alt="image" src="https://github.com/user-attachments/assets/8cbcd10d-721b-4772-8355-0188c612fbb0">
 
+---
 
