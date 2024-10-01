@@ -8,14 +8,7 @@ A **time series** is a sequence of data points collected or recorded at successi
 
 ## Motivation
 
-In theory, a time series can be decomposed into several components to better understand how the data behaves over time. These components include:
-
-- **Trend**
-- **Seasonality**
-- **Cyclicality**
-- **Noise (Randomness)**
-
-By modeling these components separately, we can enhance the interpretability of the time series data. In this project, the main focus will be on modeling **trend** and **seasonality**, as these two components often explain the majority of the variation in a time series. However, this may not always be the case for all datasets.
+In theory, a time series can be decomposed into several components to better understand how the data behaves over time. These components include trend, seasonality, cyclicality, noise (randomness). By modeling these components separately, we can enhance the interpretability of the time series data. In this project, the main focus will be on modeling **trend** and **seasonality**, as these two components often explain the majority of the variation in a time series. However, this may not always be the case for all datasets.
 
 ---
 
